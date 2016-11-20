@@ -1,6 +1,9 @@
 Kippo Ansible Playbook
 ----------------------
 
+This project fork from https://github.com/Erethon/Kippo-ansible 
+And I @elqahtani add Kippo-Graph role to display results from kippo. 
+
 This is an Ansible playbook to install [Kippo](
 https://github.com/desaster/kippo) on Debian hosts.
 
@@ -17,7 +20,7 @@ Process:
 * run kippo
 
 This is a very basic skeleton, feel free to mess around with it. I've only
-tested it with Debian Wheezy and it seems to work. Keep in mind this is a proof
+tested it with Debian Wheezy and Ubuntu 14.04, and it seems to work. Keep in mind this is a proof
 of concept playbook, so some stuff could be improved (e.g. mysql security).
 
 How to use
