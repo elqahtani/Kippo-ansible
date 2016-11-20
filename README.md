@@ -37,5 +37,3 @@ Screenshots
 Here's how kippo-graph looks like:
 
 ![kippo-home1](https://cloud.githubusercontent.com/assets/8499688/20463622/1fd9a744-af6a-11e6-9489-2c13bcc64d4f.png)
-![kippo-home2](https://cloud.githubusercontent.com/assets/8499688/20463623/2114c760-af6a-11e6-9754-bb729876d0ab.png)
-
