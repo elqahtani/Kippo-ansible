@@ -19,6 +19,8 @@ Process:
 * change sshd port to 22422 (it's a variable, so it's easy to change)
 * add an iptable rule to forward traffic from port 2222 to 22
 * run kippo
+* install dependecies for kippo-graph : libapache2-mod-php5 php5-mysql php5-gd php5-curl
+* Add Kippo-graph https://github.com/ikoniaris/kippo-graph
 
 This is a very basic skeleton, feel free to mess around with it. I've only
 tested it with Debian Wheezy and Ubuntu 14.04, and it seems to work. Keep in mind this is a proof
