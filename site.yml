@@ -18,3 +18,12 @@
     - kippo
   tags:
     - kippo
+
+- name: Configure Kippo-Graph nodes
+  hosts: local
+
+  roles:
+    - kippo-graph
+  tags:
+    - kippo-graph
+

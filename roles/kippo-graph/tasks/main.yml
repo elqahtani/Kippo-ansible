@@ -1,0 +1,27 @@
+---
+ 
+- name: apt-get install dependencies
+  apt: name={{item}} state=latest update_cache=yes
+  with_items:
+  - libapache2-mod-php5
+  - php5-mysql
+  - php5-gd
+  - php5-curl
+  - zip 
+  - unzip 
+
+- name: Clone kippo-graph repo
+  sudo: yes
+  git: repo={{ kippograph_repo }}
+       dest=/var/www/html/kippo-graph
+       version={{ kippograph_version }}
+
+- name: create kippo-graph config
+  template: src=config.php.j2 dest=/var/www/html/kippo-graph/config.php
+  sudo: yes
+
+- name: change permission generated-graphs
+  file: path=/var/www/html/kippo-graph/generated-graphs state=directory mode=0777
+  sudo: yes
+  notify:
+  - Restart apache2

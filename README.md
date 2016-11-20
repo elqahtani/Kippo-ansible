@@ -2,7 +2,8 @@ Kippo Ansible Playbook
 ----------------------
 
 This project fork from https://github.com/Erethon/Kippo-ansible 
-And I @elqahtani add Kippo-Graph role to display results from kippo. 
+
+And I add Kippo-Graph ansible role to display results from kippo. 
 
 This is an Ansible playbook to install [Kippo](
 https://github.com/desaster/kippo) on Debian hosts.
